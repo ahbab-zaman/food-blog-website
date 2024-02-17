@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: azure;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header css starts here */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#nav-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-right: 100px;
+}
+
+.logo-head {
+    float: right;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
+    color: darkgray;
+    font-size: 40px;
+}
+
+.img-logo {
+    width: 90px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    transform: rotate(0);
+    transition: all 1s;
+}
+
+.img-logo:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.mid-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-nav li {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.4s;
+
+}
+
+.mid-nav li a {
+    color: darkgray;
+}
+
+.mid-nav li:hover {
+    color: darkgray;
+    transform: scale(1.1);
+}
+
+.aside-logo {
+    margin-left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0 15px;
+    background-color: transparent;
+    color: darkgray;
+    transition: transform 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.line-1 {
+    width: 90vw;
+    margin: auto;
+    margin-top: 15px;
+    border: 1.5px solid darkgray;
+}
+
+/* heder css ends here */
+#mid-bar {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-head {
+    font-size: 50px;
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
+    color: darkgray;
+    letter-spacing: 2px;
+}
+
+.recipe-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-img {
+    width: 100%;
+    padding: 14px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.menu-img:hover {
+    transform: scale(1.2);
+}
+
+h3,
+p {
+    margin: 5px 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+#msg-bar {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.msg-title {
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    color: darkgray;
+    letter-spacing: 2px;
+}
+
+.hrt-logo {
+    height: 50px;
+    color: orange;
+    background: none
+}
+
+.end-title {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: darkgray;
+}
+
+#latest-recipe {
+    min-height: 95vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recipe-img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.latest-img {
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.tag:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.images {
+    width: 100%;
+    margin-left: 100px;
+    border: none;
+    border-radius: 15px;
+    opacity: 0.5;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+.line {
+    width: 90%;
+    border: 1px solid #fff;
+}
+
+.fs-logo {
+    height: 50px;
+    color: orange;
+    background: transparent;
+    margin: 80px;
+}
+
+.l-reciepe-heading {
+    margin: 80px;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 60px;
+    color: darkgray;
+    letter-spacing: 2px;
+}
+
+/* About css starts here */
+#about {
+    min-height: 95vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sheff-img {
+    width: 40vw;
+    margin: 0 70px 0;
+}
+
+.about-description {
+    width: 60vw;
+    text-align: start;
+    margin-left: -75px;
+    margin-right: 0;
+}
+    .hat-logo {
+        height: 150px;
+        color: orange;
+        background: none
+    }
+
+    .about-head {
+        text-align: center;
+        font-family: 'Italianno', cursive;
+        font-size: 60px;
+        color: darkgray;
+    }
+    .description-head{
+        margin-left: 15px;
+        padding: 5px;
+        font-size: 35px;
+        color: darkgray;
+        font-family: 'Crimson Text', serif; 
+        font-weight: lighter;
+    }
+    .about-para{
+        padding: 5px;
+        color: darkgray;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        text-align: justify;
+    }
+    .about-btn{
+        margin-left: 23px;
+        width: 200px;
+        padding: 5px;
+        color: green;
+        font-size: 18px;
+        background-color: #fff;
+        border: 1 solid green;
+        border-radius: 2px;
+    }
+    .about-btn:hover{
+        cursor: pointer;
+        color: #fff;
+        background-color: green;
+
+    }
+    /* cook css ends here */
+    #cook{
+        min-height: 95vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .cook-img{
+        height: 120px;
+        background: none
+    }
+    .recipe-desc{
+        position: relative;
+        overflow: hidden;
+    }
+    .recipe-tag{
+       position: absolute;    
+       right:0%;
+       top: 10%;
+       margin-right: 10px;
+       color: #fff;
+       font-family: 'Roboto', sans-serif;
+       font-size: 20px;
+       visibility: hidden;
+    }
+    .recipe-desc:hover .recipe-tag{
+     visibility: visible;
+    }
+    .cook-head{
+        text-align: center;
+        font-family: 'Italianno', cursive;
+        font-size: 60px;
+        color: darkgray;
+        letter-spacing: 2px;
+    }
+    /* cook css ends here */
+
+    /* miss-out css starts here */
+    #miss-out{
+        min-height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .msg-img{
+        height: 60px;
+        background: none
+    }
+    .miss-out-head{
+        text-align: center;
+        font-family: 'Italianno', cursive;
+        font-size: 60px;
+        color: darkgray;
+        letter-spacing: 2px;
+    }
+.miss-out-para{
+       margin: 10px;
+    padding: 10px;
+    }
+    .mail{
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+        text-align: start;
+        width: 280px;
+        margin: 10px;
+        padding: 10px;
+        border: none;
+    }
+    .miss-out-btn{
+        width: 150px;
+         float: right;
+        margin: 10px;
+        margin-top: -22px;
+        margin-right: -162px;
+         font-size: 17px;
+         font-family: 'Roboto', sans-serif;
+         color: green;
+        background-color: #fff;
+        border: 1px solid green;
+        border-radius: 2px
+    }
+    .miss-out-btn:hover{
+        cursor: pointer;
+        color: #fff;
+        background-color: green; 
+    }
+
+    .line-2{
+        width: 300px;
+        margin-top: -10px;
+    }
+
+    /* miss-out css ends here */
+    /* footer starts here */
+    footer{
+        min-height: 5vh;
+       margin-top: 12px;
+        text-align: center;
+        font-family:'Roboto', sans-serif;
+        font-size: 12px;
+    }
+/* footer css ends here */
+/* responsive web design starts here */
+@media (max-width:700px) {
+header{
+    position:static;
+}
+#nav-head{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.aside-logo{
+    margin: 0 auto;
+}
+.mid-nav ul{
+    display: block;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.mid-nav ul li a{
+    margin-left: 100px;
+}
+#mid-bar{
+    min-width: 80vw;
+}
+.recipe-menu{
+    flex-direction: column;
+  margin-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-head {
+    font-size: 40px;
+}
+.menu-img{
+    width: 80%;
+    padding: 2px;
+    margin: 2px;
+}
+#msg-bar{
+    min-width: 80vw;
+    align-items: center;
+    justify-content: center;
+}
+.msg-title{
+    font-size: 30px;
+}
+#latest-recipe{
+    justify-content: center;
+}
+.latest-img{
+    margin-right: 40px;
+}
+.recipe-img{
+    margin-right: 40px;
+   display: block;
+   width:400px;
+}
+.tag{
+    top: 50%;
+    left: 30%;
+}
+.about-main{
+    margin-right: 40px;
+}
+.recipe-tag{
+    bottom: 40%;
+    right: 20%;
+}
+.email-box{
+    display: block;
+}
+.mail{
+    display: inline-block;
+    border: 1ps solid green;
+    width: 150px;
+   margin: 5px auto;
+}
+.line-2{
+    visibility: hidden;
+}
+
+.miss-out-btn{
+    width: 150px;
+    margin: 5px auto;
+    margin-top: -25px;
+    margin-left: 5px;
+}
+}
+
+
+
+/* responsive web design ends here */
